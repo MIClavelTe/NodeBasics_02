@@ -20,5 +20,5 @@ function getProfile(username) {
     });
 };
 
-getProfile('kjonathante');
-getProfile('miclavelte');
+const users = process.argv.slice(2);
+users.forEach(getProfile);
