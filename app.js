@@ -14,6 +14,7 @@ const request = https.get(`https://teamtreehouse.com/${username}.json`, response
     });
 
     response.on('end', () => {
-        console.log(body);
+        var profile = JSON.parse(body);
+        printMessage(profile.name, profile.badges.length, profile.points.total);
     });
 });
