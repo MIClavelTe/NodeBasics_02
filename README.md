@@ -1,2 +1,2 @@
-# NodeBasics_02
+# *NodeBasics_02*
 Building a Command Line Application
